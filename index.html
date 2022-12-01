@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/adaptive_style.css">
+    <title>HAKATON</title>
+  </head>
+  <body>
+
+    <!-- burger start -->
+    <div class="burger-menu">
+        <div class="burger-menu__content">
+          <img
+            src="./image/close.png"
+            alt="error:("
+            class="burger-menu__btn_close"
+          />
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item">
+              <a href="#">About</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#">Skills</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#">Other Skills</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- burger end -->
+
+    <!-- navbar start -->
+    <div data-aos="zoom-out" class="navbar">
+      <img src="./image/logo.png" alt="error:(" class="navbar__logo" />
+      <h2>Javascript Developer</h2>
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="#">About Me</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#">Skills</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#">Other Skills</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+      <img
+              src="./image/menu.png"
+              alt="error:("
+              class="navbar__btn_burger"
+            />
+    </div>
+    <div></div>
+    <!-- navbar end -->
+    <!-- header start -->
+    <header>
+      <div class="header">
+        <div class="header__title">
+          <h1>Abdrasulov Sanat</h1>
+          <p>
+            I am 22 years old I am a beginner Javascript developer. <br />
+            listening carefully to lectures and I can make <br />
+            layout using css and adaptives.
+          </p>
+        </div>
+        <img src="./image/me.jpg" alt="error:(" />
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      class="content"
+    >
+      <h2>Skills</h2>
+      <img class="content__logo" src="./image/goal.png" alt="error:(">
+      <p>HTML</p>
+      <div class="skill-content">
+        <div class="skill html">90%</div>
+      </div>
+
+      <p>CSS</p>
+      <div class="skill-content">
+        <div class="skill css">87%</div>
+      </div>
+
+      <p>Bootstrap</p>
+      <div class="skill-content">
+        <div class="skill bs">82%</div>
+      </div>
+
+      <p>JavaScript</p>
+      <div class="skill-content">
+        <div class="skill js">5%</div>
+      </div>
+    </div>
+    <!-- content end -->
+
+    <!-- features start -->
+    <div class="features">
+        <h2 class="features__title_main">Other Skills</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <img
+              src="./image/football.png"
+              alt="error:("
+              class="features__icon"
+            />
+            <h4 class="features__title">FOOTBALL</h4>
+            <p class="features__desc">
+              
+            </p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./image/ps4.png"
+              alt="error:("
+              class="features__icon"
+            />
+            <h4 class="features__title">PS4</h4>
+            <p class="features__desc">
+              
+            </p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./image/billiard.png"
+              alt="error:("
+              class="features__icon"
+            />
+            <h4 class="features__title">BILLIARD</h4>
+            <p class="features__desc">
+              
+            </p>
+          </li>
+        </ul>
+        <video controls="controls" autoplay data-aos="fade-left" class="features__video" src="./billiards.mp4"></video>
+      </div>
+    </div>
+    <!-- features end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer">
+        <img src="./image/logo.png" alt="error:(" class="footer__logo" />
+        <h3>Contacts</h3>
+        <ul class="footer__list">
+          <li class="footer__item">(+996)701 71 00 51</li>
+          <li class="footer__item">Instagram: abdrasu1ov</li>
+          <li class="footer__item"></li>
+        </ul>
+        <p class="footer__info">© 2022, HAKATON</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script>
+        let openBtn = document.querySelector(".navbar__btn_burger");
+        let closeBtn = document.querySelector(".burger-menu__btn_close");
+        let burgerMenu = document.querySelector(".burger-menu");
+  
+        openBtn.addEventListener("click", () => {
+          burgerMenu.style.display = "block";
+        });
+  
+        closeBtn.addEventListener("click", () => {
+          burgerMenu.style.display = "none";
+        });
+      </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
